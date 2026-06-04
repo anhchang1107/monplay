@@ -72,7 +72,7 @@ app.get('/api/iptv-movies', async (req, res) => {
 
                 serverItems.forEach(ep => {
                     // Định dạng cấu trúc stream của bạn
-                    contentsList.append({
+                    contentsList.push({
                         "id": `content-${movieDetail.slug}-${ep.slug}`,
                         "name": ep.name,
                         "streams": [{
