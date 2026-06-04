@@ -9,7 +9,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/api/iptv-movies', async (req, res) => {
+app.get('/', async (req, res) => {
     try {
         // 1. Gọi lấy danh sách phim mới nhất từ NguonC
         const nguonCResponse = await axios.get('https://phim.nguonc.com/api/films/phim-moi-cap-nhat?page=1');
